@@ -358,7 +358,7 @@ Then number of elements found by `By.xpath(//span[@class="wishlist-qty" and cont
 When I click on element located by `By.xpath(//span[contains(text(),'Shopping cart')])`
 Then the page with the URL 'https://demowebshop.tricentis.com/cart' is loaded
 Then number of elements found by `By.xpath(//span[@class="cart-qty" and contains(text(),"(2)")])` is = `1`
-When I click on element located by `By.xpath(//tr[@class='cart-item-row'][1]//input[@name='removefromcart'])
-When I click on element located by `By.xpath(//tr[@class='cart-item-row'][2]//input[@name='removefromcart'])``
+When I click on element located by `By.xpath(//tr[@class='cart-item-row'][1]//input[@name='removefromcart'])`
+When I click on element located by `By.xpath(//tr[@class='cart-item-row'][2]//input[@name='removefromcart'])`
 When I click on element located by `By.xpath(//input[contains(@class,'update-cart-button')])`
 Then number of elements found by `By.xpath(//span[@class="cart-qty" and contains(text(),"(0)")])` is = `1`
